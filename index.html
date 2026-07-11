@@ -2,152 +2,210 @@
 <html>
 
 <head>
-    <title>IT Center HTML Imtihon</title>
+    <title>HTML Imtihon Loyihasi</title>
 </head>
 
 <body>
 
-    <h1 align="center">IT Center</h1>
-    <h2 align="center">HTML Imtihon</h2>
+    <h1 align="center">Digital IT Academy</h1>
+    <h2 align="center">Frontend HTML Imtihoni</h2>
 
     <hr>
 
-    <h3>Men haqimda</h3>
+    <h3>O'quvchi haqida</h3>
 
     <p>
-        Mening ismim <b>Sardor</b>.
-        Men <i>Frontend dasturlash</i> kursida o'qiyman.
+        Mening ismim <b>Sardor</b>. Men
+        <i>Frontend Dasturlash</i> kursida tahsil olaman.
     </p>
 
     <p>
-        Kelajakda <mark>Frontend Developer</mark> bo'lishni xohlayman.
+        Kelajakdagi maqsadim
+        <mark>Kuchli Web Dasturchi</mark>
+        bo'lish.
     </p>
 
     <hr>
 
-    <h3>O'rganayotgan fanlar</h3>
+    <h3>O'rganayotgan texnologiyalar</h3>
 
-    <ul>
+    <ul type="circle">
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
+        <li>React</li>
         <li>GitHub</li>
     </ul>
 
-    <h3>Kun tartibi</h3>
+    <h3>Haftalik reja</h3>
 
     <ol>
-        <li>Darsga kelish</li>
-        <li>Kod yozish</li>
-        <li>Mashq qilish</li>
-        <li>Uyga vazifa</li>
+        <li>HTML darslari</li>
+        <li>CSS mashqlari</li>
+        <li>JavaScript</li>
+        <li>Loyiha yaratish</li>
+        <li>Takrorlash</li>
     </ol>
 
     <hr>
 
-    <h2 align="center">O'quvchilar Jadvali</h2>
+    <h2 align="center">Talabalar Natijasi</h2>
 
-    <table border="1" cellpadding="10" cellspacing="0" width="700" align="center">
+    <table border="1" cellpadding="10" cellspacing="0" width="800" align="center">
 
-        <tr bgcolor="lightblue">
-            <th>№</th>
-            <th>Ism</th>
-            <th>Yo'nalish</th>
-            <th>Ball</th>
-        </tr>
+        <thead bgcolor="lightgray">
 
-        <tr align="center">
-            <td>1</td>
-            <td>Ali</td>
-            <td>Frontend</td>
-            <td>95</td>
-        </tr>
+            <tr>
+                <th>№</th>
+                <th>Ism</th>
+                <th>Yo'nalish</th>
+                <th>HTML</th>
+                <th>CSS</th>
+                <th>JS</th>
+            </tr>
 
-        <tr align="center">
-            <td>2</td>
-            <td>Vali</td>
-            <td>Backend</td>
-            <td>90</td>
-        </tr>
+        </thead>
 
-        <tr align="center">
-            <td>3</td>
-            <td>Sardor</td>
-            <td>Frontend</td>
-            <td>100</td>
-        </tr>
+        <tbody align="center">
+
+            <tr>
+                <td>1</td>
+                <td>Ali</td>
+                <td>Frontend</td>
+                <td>95</td>
+                <td>92</td>
+                <td>90</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Vali</td>
+                <td>Backend</td>
+                <td>88</td>
+                <td>85</td>
+                <td>91</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Sardor</td>
+                <td>Frontend</td>
+                <td>100</td>
+                <td>99</td>
+                <td>98</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot bgcolor="lightyellow">
+
+            <tr align="center">
+                <td colspan="5">O'rtacha ball</td>
+                <td>93</td>
+            </tr>
+
+        </tfoot>
 
     </table>
 
     <hr>
 
-    <h3>Rasm</h3>
-
-    <img src="https://via.placeholder.com/350x200"
-         alt="HTML"
-         width="350">
-
-    <hr>
-
-    <h3>Ro'yxatdan o'tish</h3>
+    <h3>Kursga ro'yxatdan o'tish</h3>
 
     <form>
 
-        <label>Ism:</label><br>
-        <input type="text" placeholder="Ismingiz">
+        <fieldset>
 
-        <br><br>
+            <legend>Shaxsiy ma'lumotlar</legend>
 
-        <label>Email:</label><br>
-        <input type="email" placeholder="Email">
+            <label>Ism:</label><br>
+            <input type="text" placeholder="Ismingiz">
 
-        <br><br>
+            <br><br>
 
-        <label>Parol:</label><br>
-        <input type="password">
+            <label>Email:</label><br>
+            <input type="email" placeholder="Email">
 
-        <br><br>
+            <br><br>
 
-        <label>Kurs:</label><br>
+            <label>Parol:</label><br>
+            <input type="password">
 
-        <select>
-            <option>Frontend</option>
-            <option>Backend</option>
-            <option>Python</option>
-        </select>
+            <br><br>
 
-        <br><br>
+            <label>Tug'ilgan sana:</label><br>
+            <input type="date">
 
-        <label>Jinsi:</label><br>
+        </fieldset>
 
-        <input type="radio" name="gender"> Erkak
-        <input type="radio" name="gender"> Ayol
+        <br>
 
-        <br><br>
+        <fieldset>
 
-        <label>Izoh:</label><br>
+            <legend>Kurs tanlash</legend>
 
-        <textarea rows="4" cols="35"></textarea>
+            <label>Yo'nalish:</label>
 
-        <br><br>
+            <select>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Python</option>
+                <option>Flutter</option>
+            </select>
 
-        <button type="submit">Yuborish</button>
+            <br><br>
+
+            <label>Jinsi:</label><br>
+
+            <input type="radio" name="gender"> Erkak
+            <input type="radio" name="gender"> Ayol
+
+            <br><br>
+
+            <label>Biladigan texnologiyalar:</label><br>
+
+            <input type="checkbox"> HTML <br>
+            <input type="checkbox"> CSS <br>
+            <input type="checkbox"> JavaScript <br>
+            <input type="checkbox"> React
+
+            <br><br>
+
+            <label>Izoh:</label><br>
+
+            <textarea rows="5" cols="40"></textarea>
+
+        </fieldset>
+
+        <br>
+
+        <button>Yuborish</button>
         <button type="reset">Tozalash</button>
 
     </form>
 
     <hr>
 
-    <h3>Foydali havola</h3>
+    <h3>Kurs rasmi</h3>
 
-    <a href="https://github.com" target="_blank">
-        GitHub
-    </a>
+    <img src="https://via.placeholder.com/450x250"
+         width="450"
+         alt="IT Academy">
+
+    <hr>
+
+    <h3>Foydali havolalar</h3>
+
+    <a href="https://github.com" target="_blank">GitHub</a>
+
+    <br>
+
+    <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
 
     <hr>
 
     <footer align="center">
-        <p>© 2026 IT Center</p>
+        <b>© 2026 Digital IT Academy. Barcha huquqlar himoyalangan.</b>
     </footer>
 
 </body>
