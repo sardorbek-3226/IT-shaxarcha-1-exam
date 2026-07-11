@@ -2,139 +2,116 @@
 <html>
 
 <head>
-    <title>HTML Imtihon Loyihasi</title>
+    <title>Library Management</title>
 </head>
 
 <body>
 
-    <h1 align="center">Digital IT Academy</h1>
-    <h2 align="center">Frontend HTML Imtihoni</h2>
+    <h1 align="center">📚 Smart Library</h1>
+    <h2 align="center">Kutubxona Boshqaruvi</h2>
 
     <hr>
 
-    <h3>O'quvchi haqida</h3>
+    <h3>Kutubxona haqida</h3>
 
     <p>
-        Mening ismim <b>Sardor</b>. Men
-        <i>Frontend Dasturlash</i> kursida tahsil olaman.
+        <b>Smart Library</b> o'quvchilar uchun zamonaviy kutubxona
+        hisoblanadi. Bu yerda turli fanlarga oid kitoblar mavjud.
     </p>
 
     <p>
-        Kelajakdagi maqsadim
-        <mark>Kuchli Web Dasturchi</mark>
-        bo'lish.
+        Bizning maqsadimiz
+        <mark>yoshlarda kitob o'qish odatini rivojlantirish.</mark>
     </p>
 
     <hr>
 
-    <h3>O'rganayotgan texnologiyalar</h3>
+    <h3>Mavjud bo'limlar</h3>
 
-    <ul type="circle">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>GitHub</li>
+    <ul>
+        <li>Dasturlash</li>
+        <li>Matematika</li>
+        <li>Ingliz tili</li>
+        <li>Biznes</li>
+        <li>Badiiy kitoblar</li>
     </ul>
 
-    <h3>Haftalik reja</h3>
-
-    <ol>
-        <li>HTML darslari</li>
-        <li>CSS mashqlari</li>
-        <li>JavaScript</li>
-        <li>Loyiha yaratish</li>
-        <li>Takrorlash</li>
-    </ol>
-
     <hr>
 
-    <h2 align="center">Talabalar Natijasi</h2>
+    <h2 align="center">Kitoblar ro'yxati</h2>
 
-    <table border="1" cellpadding="10" cellspacing="0" width="800" align="center">
+    <table border="1" cellpadding="10" cellspacing="0" width="850" align="center">
 
-        <thead bgcolor="lightgray">
-
+        <thead bgcolor="lightgreen">
             <tr>
                 <th>№</th>
-                <th>Ism</th>
-                <th>Yo'nalish</th>
-                <th>HTML</th>
-                <th>CSS</th>
-                <th>JS</th>
+                <th>Kitob nomi</th>
+                <th>Muallif</th>
+                <th>Til</th>
+                <th>Holati</th>
             </tr>
-
         </thead>
 
         <tbody align="center">
 
             <tr>
                 <td>1</td>
-                <td>Ali</td>
-                <td>Frontend</td>
-                <td>95</td>
-                <td>92</td>
-                <td>90</td>
+                <td>HTML & CSS</td>
+                <td>Jon Duckett</td>
+                <td>English</td>
+                <td>Mavjud</td>
             </tr>
 
             <tr>
                 <td>2</td>
-                <td>Vali</td>
-                <td>Backend</td>
-                <td>88</td>
-                <td>85</td>
-                <td>91</td>
+                <td>JavaScript</td>
+                <td>David Flanagan</td>
+                <td>English</td>
+                <td>Band</td>
             </tr>
 
             <tr>
                 <td>3</td>
-                <td>Sardor</td>
-                <td>Frontend</td>
-                <td>100</td>
-                <td>99</td>
-                <td>98</td>
+                <td>Atomic Habits</td>
+                <td>James Clear</td>
+                <td>English</td>
+                <td>Mavjud</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Clean Code</td>
+                <td>Robert Martin</td>
+                <td>English</td>
+                <td>Mavjud</td>
             </tr>
 
         </tbody>
-
-        <tfoot bgcolor="lightyellow">
-
-            <tr align="center">
-                <td colspan="5">O'rtacha ball</td>
-                <td>93</td>
-            </tr>
-
-        </tfoot>
 
     </table>
 
     <hr>
 
-    <h3>Kursga ro'yxatdan o'tish</h3>
+    <h3>Kitob olish</h3>
 
     <form>
 
         <fieldset>
 
-            <legend>Shaxsiy ma'lumotlar</legend>
+            <legend>Foydalanuvchi ma'lumotlari</legend>
 
-            <label>Ism:</label><br>
-            <input type="text" placeholder="Ismingiz">
-
-            <br><br>
-
-            <label>Email:</label><br>
-            <input type="email" placeholder="Email">
+            Ism:<br>
+            <input type="text">
 
             <br><br>
 
-            <label>Parol:</label><br>
-            <input type="password">
+            Telefon:<br>
+            <input type="tel">
 
             <br><br>
 
-            <label>Tug'ilgan sana:</label><br>
-            <input type="date">
+            Email:<br>
+            <input type="email">
 
         </fieldset>
 
@@ -142,70 +119,88 @@
 
         <fieldset>
 
-            <legend>Kurs tanlash</legend>
+            <legend>Kitob tanlash</legend>
 
-            <label>Yo'nalish:</label>
+            Kitob:
 
             <select>
-                <option>Frontend</option>
-                <option>Backend</option>
-                <option>Python</option>
-                <option>Flutter</option>
+                <option>HTML & CSS</option>
+                <option>JavaScript</option>
+                <option>Atomic Habits</option>
+                <option>Clean Code</option>
             </select>
 
             <br><br>
 
-            <label>Jinsi:</label><br>
+            Olish muddati:
 
-            <input type="radio" name="gender"> Erkak
-            <input type="radio" name="gender"> Ayol
-
-            <br><br>
-
-            <label>Biladigan texnologiyalar:</label><br>
-
-            <input type="checkbox"> HTML <br>
-            <input type="checkbox"> CSS <br>
-            <input type="checkbox"> JavaScript <br>
-            <input type="checkbox"> React
+            <input type="date">
 
             <br><br>
 
-            <label>Izoh:</label><br>
+            Qo'shimcha xizmatlar:
 
-            <textarea rows="5" cols="40"></textarea>
+            <br>
+
+            <input type="checkbox"> Elektron nusxa
+
+            <br>
+
+            <input type="checkbox"> Audio kitob
+
+            <br><br>
+
+            Izoh:
+
+            <br>
+
+            <textarea rows="4" cols="40"></textarea>
 
         </fieldset>
 
         <br>
 
-        <button>Yuborish</button>
+        <button>Buyurtma berish</button>
         <button type="reset">Tozalash</button>
 
     </form>
 
     <hr>
 
-    <h3>Kurs rasmi</h3>
+    <h3>Kutubxona rasmi</h3>
 
-    <img src="https://via.placeholder.com/450x250"
-         width="450"
-         alt="IT Academy">
+    <img src="https://via.placeholder.com/500x250"
+         width="500"
+         alt="Library">
+
+    <hr>
+
+    <h3>Ish vaqti</h3>
+
+    <ol>
+        <li>Dushanba - Juma: 09:00 - 18:00</li>
+        <li>Shanba: 09:00 - 15:00</li>
+        <li>Yakshanba: Dam olish</li>
+    </ol>
 
     <hr>
 
     <h3>Foydali havolalar</h3>
 
-    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://www.goodreads.com" target="_blank">Goodreads</a>
 
     <br>
 
-    <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+    <a href="https://openlibrary.org" target="_blank">Open Library</a>
 
     <hr>
 
     <footer align="center">
-        <b>© 2026 Digital IT Academy. Barcha huquqlar himoyalangan.</b>
+
+        <p>
+            © 2026 Smart Library | Barcha huquqlar himoyalangan.
+        </p>
+
     </footer>
 
 </body>
