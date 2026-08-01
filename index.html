@@ -2,88 +2,102 @@
 <html>
 
 <head>
-    <title>Library Management</title>
+    <title>Tech Academy</title>
 </head>
 
-<body>
+<body bgcolor="#f0f8ff">
 
-    <h1 align="center"> Smart Library</h1>
-    <h2 align="center">Kutubxona Boshqaruvi</h2>
+    <h1 align="center" style="color: darkblue;">
+        Tech Academy
+    </h1>
 
-    <hr>
+    <h2 align="center" style="color: darkgreen;">
+        Dasturlash O'quv Markazi
+    </h2>
 
-    <h3>Kutubxona haqida</h3>
+    <hr color="blue">
+
+    <h3 style="color: brown;">Biz haqimizda</h3>
 
     <p>
-        <b>Smart Library</b> o'quvchilar uchun zamonaviy kutubxona
-        hisoblanadi. Bu yerda turli fanlarga oid kitoblar mavjud.
+        <b>Tech Academy</b> zamonaviy IT o'quv markazi bo'lib,
+        bu yerda Frontend, Backend, Python va Mobil dasturlash kurslari mavjud.
     </p>
 
     <p>
         Bizning maqsadimiz
-        <mark>yoshlarda kitob o'qish odatini rivojlantirish.</mark>
+        <mark>yoshlarga sifatli IT ta'lim berish.</mark>
     </p>
 
-    <hr>
+    <hr color="gray">
 
-    <h3>Mavjud bo'limlar</h3>
+    <h3 style="color: darkred;">Mavjud kurslar</h3>
 
     <ul>
-        <li>Dasturlash</li>
-        <li>Matematika</li>
-        <li>Ingliz tili</li>
-        <li>Biznes</li>
-        <li>Badiiy kitoblar</li>
+        <li>Frontend</li>
+        <li>Backend</li>
+        <li>Python</li>
+        <li>Flutter</li>
+        <li>Grafik Dizayn</li>
     </ul>
 
     <hr>
 
-    <h2 align="center">Kitoblar ro'yxati</h2>
+    <h2 align="center">Kurslar jadvali</h2>
 
-    <table border="1" cellpadding="10" cellspacing="0" width="850" align="center">
+    <table border="2"
+           cellpadding="12"
+           cellspacing="0"
+           width="900"
+           align="center"
+           bgcolor="white">
 
-        <thead bgcolor="lightgreen">
+        <thead bgcolor="#00b894">
+
             <tr>
+
                 <th>№</th>
-                <th>Kitob nomi</th>
-                <th>Muallif</th>
-                <th>Til</th>
-                <th>Holati</th>
+                <th>Kurs</th>
+                <th>Davomiyligi</th>
+                <th>Ustoz</th>
+                <th>Narxi</th>
+
             </tr>
+
         </thead>
 
         <tbody align="center">
 
-            <tr>
+            <tr bgcolor="#dff9fb">
                 <td>1</td>
-                <td>HTML & CSS</td>
-                <td>Jon Duckett</td>
-                <td>English</td>
-                <td>Mavjud</td>
+                <td>Frontend</td>
+                <td>6 oy</td>
+                <td>Sardor</td>
+                <td>700 000 so'm</td>
             </tr>
 
             <tr>
                 <td>2</td>
-                <td>JavaScript</td>
-                <td>David Flanagan</td>
-                <td>English</td>
-                <td>Band</td>
+                <td>Backend</td>
+                <td>8 oy</td>
+                <td>Javohir</td>
+                <td>800 000 so'm</td>
             </tr>
 
-            <tr>
+            <tr bgcolor="#dff9fb">
                 <td>3</td>
-                <td>Atomic Habits</td>
-                <td>James Clear</td>
-                <td>English</td>
-                <td>Mavjud</td>
+                <td>Python</td>
+                <td>5 oy</td>
+                <td>Azizbek</td>
+                <td>650 000 so'm</td>
             </tr>
 
             <tr>
                 <td>4</td>
-                <td>Clean Code</td>
-                <td>Robert Martin</td>
-                <td>English</td>
-                <td>Mavjud</td>
+                <td>Flutter</td>
+                <td>7 oy</td>
+                <td>Bekzod</td>
+                <td>900 000 so'm</td>
             </tr>
 
         </tbody>
@@ -92,111 +106,122 @@
 
     <hr>
 
-    <h3>Kitob olish</h3>
+    <h3 style="color: darkblue;">Ro'yxatdan o'tish</h3>
 
     <form>
 
+        <b>Ism:</b><br>
+        <input type="text" size="35">
 
-            <h3>Foydalanuvchi ma'lumotlari</h3>
+        <br><br>
 
-            Ism:<br>
-            <input type="text">
+        <b>Telefon:</b><br>
+        <input type="tel" size="35">
 
-            <br><br>
+        <br><br>
 
-            Telefon:<br>
-            <input type="tel">
+        <b>Email:</b><br>
+        <input type="email" size="35">
 
-            <br><br>
+        <br><br>
 
-            Email:<br>
-            <input type="email">
+        <b>Kurs tanlang:</b>
 
+        <select>
 
-        <br>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Python</option>
+            <option>Flutter</option>
 
+        </select>
 
-            <h3>Kitob tanlash</h3>
+        <br><br>
 
-            Kitob:
+        <b>Dars boshlanish sanasi:</b>
 
-            <select>
-                <option>HTML & CSS</option>
-                <option>JavaScript</option>
-                <option>Atomic Habits</option>
-                <option>Clean Code</option>
-            </select>
+        <input type="date">
 
-            <br><br>
+        <br><br>
 
-            Olish muddati:
-
-            <input type="date">
-
-            <br><br>
-
-            Qo'shimcha xizmatlar:
-
-            <br>
-
-            <input type="checkbox"> Elektron nusxa
-
-            <br>
-
-            <input type="checkbox"> Audio kitob
-
-            <br><br>
-
-            Izoh:
-
-            <br>
-
-            <textarea rows="4" cols="40"></textarea>
-
-
+        <b>Qo'shimcha xizmatlar</b>
 
         <br>
 
-        <button>Buyurtma berish</button>
-        <button type="reset">Tozalash</button>
+        <input type="checkbox"> Sertifikat
+
+        <br>
+
+        <input type="checkbox"> Video darslar
+
+        <br>
+
+        <input type="checkbox"> Amaliy loyiha
+
+        <br><br>
+
+        <b>Izoh:</b>
+
+        <br>
+
+        <textarea rows="5" cols="45"></textarea>
+
+        <br><br>
+
+        <button style="background-color:green; color:white;">
+            Ro'yxatdan o'tish
+        </button>
+
+        <button type="reset"
+                style="background-color:red; color:white;">
+            Tozalash
+        </button>
 
     </form>
 
     <hr>
 
-    <h3>Kutubxona rasmi</h3>
+    <h3>O'quv markazi rasmi</h3>
 
-    <img src="https://via.placeholder.com/500x250"
-         width="500"
-         alt="Library">
+    <img src="https://via.placeholder.com/600x300"
+         width="600"
+         height="300"
+         border="3"
+         alt="Academy">
 
     <hr>
 
     <h3>Ish vaqti</h3>
 
     <ol>
-        <li>Dushanba - Juma: 09:00 - 18:00</li>
-        <li>Shanba: 09:00 - 15:00</li>
-        <li>Yakshanba: Dam olish</li>
+        <li>Dushanba - Juma : 09:00 - 20:00</li>
+        <li>Shanba : 09:00 - 17:00</li>
+        <li>Yakshanba : Dam olish</li>
     </ol>
 
     <hr>
 
     <h3>Foydali havolalar</h3>
 
-    <a href="https://www.goodreads.com" target="_blank">Goodreads</a>
+    <a href="https://www.w3schools.com"
+       target="_blank">
+        W3Schools
+    </a>
 
-    <br>
+    <br><br>
 
-    <a href="https://openlibrary.org" target="_blank">Open Library</a>
+    <a href="https://developer.mozilla.org"
+       target="_blank">
+        MDN Web Docs
+    </a>
 
-    <hr>
+    <hr color="blue">
 
     <footer align="center">
 
-        <p>
-            © 2026 Smart Library | Barcha huquqlar himoyalangan.
-        </p>
+        <font color="gray">
+            © 2026 Tech Academy | Barcha huquqlar himoyalangan.
+        </font>
 
     </footer>
 
