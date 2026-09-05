@@ -1,181 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="uz">
 
 <head>
-    <title>Tech Academy</title>
+    <meta charset="UTF-8">
+    <title>Tech Academy — O'quv Markazi</title>
 </head>
 
 <body>
 
-    <h1 align="center">Tech Academy</h1>
-    <h2 align="center">Dasturlash O'quv Markazi</h2>
+    <header>
+        <h1 align="center">Tech Academy</h1>
+        <p align="center"><b>Zamonaviy IT O'quv Markazi</b></p>
+        <nav align="center">
+            <a href="#about">Biz haqimizda</a> | 
+            <a href="#courses">Kurslar</a> | 
+            <a href="#schedule">Dars jadvali</a> | 
+            <a href="#register">Ro'yxatdan o'tish</a> | 
+            <a href="#contact">Aloqa</a>
+        </nav>
+    </header>
 
     <hr>
 
-    <h3>Biz haqimizda</h3>
+    <main>
 
-    <p><b>Tech Academy</b> zamonaviy IT o'quv markazi bo'lib, bu yerda Frontend, Backend, Python va Flutter kurslari mavjud.</p>
+        <section id="about">
+            <h2>Biz haqimizda</h2>
+            <p><strong>Tech Academy</strong> — amaliy bilim berishga yo'naltirilgan zamonaviy o'quv maskani. Biz talabalarga dasturlashning eng talabgir sohalarini tizimli ravishda o'rgatamiz.</p>
+            <p>Bizning maqsadimiz: <mark>Yoshlarga sifatli IT ta'lim berish va ularni ish topishiga ko'maklashish.</mark></p>
+            
+            <figure>
+                <img src="https://via.placeholder.com/600x300" alt="Tech Academy binosi va o'quv xonasi" width="600" height="300">
+                <figcaption><i>Tech Academy zamonaviy dars xonalari</i></figcaption>
+            </figure>
+        </section>
 
-    <p>Bizning maqsadimiz <mark>yoshlarga sifatli IT ta'lim berish.</mark></p>
+        <hr>
+
+        <section id="courses">
+            <h2>Yo'nalishlar va Kurslar</h2>
+            <p>Quyidagi yo'nalishlar bo'yicha yangi guruhlar ochilmoqda:</p>
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React</li>
+                <li><strong>Backend:</strong> Python, Django, Node.js, SQL</li>
+                <li><strong>Mobil dasturlash:</strong> Flutter, Dart</li>
+                <li><strong>Dizayn:</strong> Grafik dizayn, UI/UX</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="schedule">
+            <h2>Kurslar jadvali va Narxlar</h2>
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <caption><b>Mavjud kurslar haqida to'liq ma'lumot</b></caption>
+                <thead>
+                    <tr bgcolor="#eeeeee">
+                        <th rowspan="2">№</th>
+                        <th rowspan="2">Kurs nomi</th>
+                        <th colspan="2">Tafsilot</th>
+                        <th rowspan="2">Oylik to'lov</th>
+                    </tr>
+                    <tr bgcolor="#eeeeee">
+                        <th>Davomiyligi</th>
+                        <th>Mentor</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td>1</td>
+                        <td>Frontend</td>
+                        <td>6 oy</td>
+                        <td>Sardor</td>
+                        <td>700 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Backend</td>
+                        <td>8 oy</td>
+                        <td>Javohir</td>
+                        <td>800 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td rowspan="2">Mobil Dasturlash (Flutter)</td>
+                        <td>5 oy</td>
+                        <td>Azizbek</td>
+                        <td>650 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>7 oy</td>
+                        <td>Bekzod</td>
+                        <td>900 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Grafik Dizayn</td>
+                        <td>4 oy</td>
+                        <td>Dilshod</td>
+                        <td>500 000 so'm</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr align="center" bgcolor="#f9f9f9">
+                        <th colspan="4" align="right">Jami kurslar soni:</th>
+                        <th>5 ta</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="register">
+            <h2>Kursga yozilish</h2>
+            <p>Joylar cheklangan. Guruhlarga qo'shilish uchun arizangizni qoldiring:</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><b>Shaxsiy ma'lumotlar</b></legend>
+                    <p>
+                        <label for="name">To'liq ismingiz:</label><br>
+                        <input type="text" id="name" name="fullname" placeholder="Ali Valiyev" required>
+                    </p>
+                    <p>
+                        <label for="phone">Telefon raqamingiz:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+998 90 123 45 67" required>
+                    </p>
+                    <p>
+                        <label for="email">Elektron pochta:</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com">
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><b>Kurs tanlovi</b></legend>
+                    <p>
+                        <label for="course-select">Yo'nalishni tanlang:</label><br>
+                        <select id="course-select" name="course">
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="mobile">Mobil Dasturlash</option>
+                            <option value="design">Grafik Dizayn</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="start-date">Sizga qulay boshlanish sanasi:</label><br>
+                        <input type="date" id="start-date" name="start_date">
+                    </p>
+                    <p>
+                        Qo'shimcha talablar:<br>
+                        <input type="checkbox" id="cert" name="preferences" value="certificate">
+                        <label for="cert">Sertifikat olish</label><br>
+                        <input type="checkbox" id="video" name="preferences" value="videos">
+                        <label for="video">Dars yozuvlari (video)</label><br>
+                        <input type="checkbox" id="portfolio" name="preferences" value="portfolio">
+                        <label for="portfolio">Portfolio uchun amaliy loyiha</label>
+                    </p>
+                    <p>
+                        <label for="notes">O'zingiz haqingizda yoki izoh:</label><br>
+                        <textarea id="notes" name="notes" rows="4" cols="45" placeholder="Qo'shimcha savol yoki maqsadingizni yozing..."></textarea>
+                    </p>
+                </fieldset>
+
+                <br>
+
+                <input type="submit" value="Arizani yuborish">
+                <input type="reset" value="Formani tozalash">
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Markaz haqida qo'shimcha</h2>
+            
+            <h3>Ish tartibi:</h3>
+            <ol>
+                <li><b>Dushanba — Juma:</b> 09:00 dan 20:00 gacha</li>
+                <li><b>Shanba:</b> 09:00 dan 17:00 gacha</li>
+                <li><b>Yakshanba:</b> Dam olish kuni</li>
+            </ol>
+
+            <h3>Tavsiya etiladigan manbalar:</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools — Dasturlash bo'yicha qo'llanma</a></li>
+                <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs — Veb-texnologiyalar arxivi</a></li>
+            </ul>
+        </section>
+
+    </main>
 
     <hr>
 
-    <h3>Mavjud kurslar</h3>
-
-    <ul>
-        <li>Frontend</li>
-        <li>Backend</li>
-        <li>Python</li>
-        <li>Flutter</li>
-        <li>Grafik Dizayn</li>
-    </ul>
-
-    <hr>
-
-    <h2 align="center">Kurslar jadvali</h2>
-
- <table border="2" cellpadding="10" cellspacing="0" width="900" align="center">
-
-    <thead>
-
-        <tr align="center">
-            <th rowspan="2">№</th>
-            <th rowspan="2">Kurs nomi</th>
-            <th colspan="2">Kurs haqida</th>
-            <th rowspan="2">Narxi</th>
-        </tr>
-
-        <tr align="center">
-            <th>Davomiyligi</th>
-            <th>Ustoz</th>
-        </tr>
-
-    </thead>
-
-    <tbody align="center">
-
-        <tr>
-            <td>1</td>
-            <td>Frontend</td>
-            <td>6 oy</td>
-            <td>Sardor</td>
-            <td>700 000 so'm</td>
-        </tr>
-
-        <tr>
-            <td>2</td>
-            <td>Backend</td>
-            <td>8 oy</td>
-            <td>Javohir</td>
-            <td>800 000 so'm</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td rowspan="2">Mobil Dasturlash</td>
-            <td>5 oy</td>
-            <td>Azizbek</td>
-            <td>650 000 so'm</td>
-        </tr>
-
-        <tr>
-            <td>4</td>
-            <td>7 oy</td>
-            <td>Bekzod</td>
-            <td>900 000 so'm</td>
-        </tr>
-
-        <tr>
-            <td>5</td>
-            <td>Grafik Dizayn</td>
-            <td>4 oy</td>
-            <td>Dilshod</td>
-            <td>500 000 so'm</td>
-        </tr>
-
-    </tbody>
-
-    <tfoot>
-
-        <tr align="center">
-            <th colspan="4">Jami kurslar</th>
-            <th>5 ta</th>
-        </tr>
-
-    </tfoot>
-
-</table>
-
-    <hr>
-
-    <h3>Ro'yxatdan o'tish</h3>
-
-    <form>
-        Ism:<br>
-        <input type="text"><br><br>
-
-        Telefon:<br>
-        <input type="tel"><br><br>
-
-        Email:<br>
-        <input type="email"><br><br>
-
-        Kurs tanlang:
-        <select>
-            <option>Frontend</option>
-            <option>Backend</option>
-            <option>Python</option>
-            <option>Flutter</option>
-        </select>
-
-        <br><br>
-
-        Boshlanish sanasi:
-        <input type="date">
-
-        <br><br>
-
-        <input type="checkbox"> Sertifikat<br>
-        <input type="checkbox"> Video darslar<br>
-        <input type="checkbox"> Amaliy loyiha
-
-        <br><br>
-
-        <textarea rows="5" cols="45"></textarea>
-
-        <br><br>
-
-        <button>Ro'yxatdan o'tish</button>
-        <button type="reset">Tozalash</button>
-    </form>
-
-    <hr>
-
-    <h3>O'quv markazi rasmi</h3>
-
-    <img src="https://via.placeholder.com/600x300" width="600" alt="Academy">
-
-    <hr>
-
-    <h3>Ish vaqti</h3>
-
-    <ol>
-        <li>Dushanba - Juma: 09:00 - 20:00</li>
-        <li>Shanba: 09:00 - 17:00</li>
-        <li>Yakshanba: Dam olish</li>
-    </ol>
-
-    <hr>
-
-    <h3>Foydali havolalar</h3>
-
-    <a href="https://www.w3schools.com" target="_blank">W3Schools</a><br>
-    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
-
-    <hr>
-
-    <footer align="center">
-        <p>© 2026 Tech Academy | Barcha huquqlar himoyalangan.</p>
+    <footer>
+        <p align="center"><small>&copy; 2026 Tech Academy. Barcha huquqlar himoyalangan.</small></p>
     </footer>
 
 </body>
